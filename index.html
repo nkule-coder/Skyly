@@ -3,34 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/index.css" />
+    <title>Skyly Weather</title>
   </head>
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="enter a city" required />
-        <input type="submit" value="search" />
+      <form id="weather-form">
+        <input
+          type="search"
+          id="city-input"
+          placeholder="Enter a city"
+          required
+        />
+        <input type="submit" value="Search" />
       </form>
     </header>
     <main>
       <h1>My location 🌍</h1>
-      <h2>Newcastle</h2>
-      <div>
-        <h3>Today</h3>
-        <p>Sunny</p>
-        <p>25°C</p>
-        <p>Humidity: 60%</p>
-        <p>Wind: 10 km/h</p>
+      <div id="weather-info">
+        <h2 id="city-name">Newcastle</h2>
+        <p id="weather-desc">Sunny</p>
+        <p id="temperature">25°C</p>
+        <p id="humidity">Humidity: 60%</p>
+        <p id="wind">Wind: 10 km/h</p>
       </div>
     </main>
+    <section id="did-you-know">
+      <h3>Did You Know? 🌦️</h3>
+      <p id="weather-fact">
+        Lightning can strike the same place twice, especially tall buildings or
+        trees.
+      </p>
+      <p>
+        Raindrops are not tear-shaped; they are more like tiny hamburger buns!
+      </p>
+      <p>
+        Wind is actually air moving from high-pressure to low-pressure areas.
+      </p>
+    </section>
     <footer>
       Developed by
-      <a href="https://github.com/nkule-coder" target="_blank">
-        Nonkululeko Msomi</a
+      <a href="https://github.com/nkule-coder" target="_blank"
+        >Nonkululeko Msomi</a
       >, with code hosted on
-      <a href="https://github.com/nkule-coder/Skyly" target="_blank"> GitHub</a>
+      <a href="https://github.com/nkule-coder/Skyly" target="_blank">GitHub</a>
       and the website powered by
-      <a href="https://skyly-weather.netlify.app/" target="_blank"> Netlify</a>
+      <a href="https://skyly-weather.netlify.app/" target="_blank">Netlify</a>
     </footer>
   </body>
 </html>
