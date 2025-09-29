@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/index.css" />
@@ -19,20 +19,21 @@
           type="search"
           id="city-input"
           placeholder="Enter a city"
+          aria-label="Search for a city"
           required
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" aria-label="Submit search" />
       </form>
     </header>
     <main>
-      <h1>My location 🌍</h1>
-      <div id="weather-info">
+      <h1>Skyly Weather Updates</h1>
+      <section id="weather-info">
         <h2 id="city-name">Newcastle</h2>
-        <p id="weather-desc">Sunny</p>
+        <p id="date">Monday</p>
+        <p id="weather-desc">Sunny ☀️</p>
         <p id="temperature">25°C</p>
-        <p id="humidity">Humidity: 60%</p>
-        <p id="wind">Wind: 10 km/h</p>
-      </div>
+        <p id="humidity-wind">Humidity: 60% | Wind: 10 km/h</p>
+      </section>
     </main>
     <section id="did-you-know">
       <h3>Did You Know? 🌦️</h3>
