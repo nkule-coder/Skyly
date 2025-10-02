@@ -3,10 +3,10 @@ const cityInput = document.getElementById("city-input");
 const cityName = document.getElementById("city-name");
 
 form.addEventListener("submit", function (event) {
-  event.preventDefault(); // stop page refresh
+  event.preventDefault();
   const city = cityInput.value.trim();
 
   if (city) {
-    cityName.textContent = city; // update city name
+    cityName.textContent = city;
   }
 });
