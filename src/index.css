@@ -79,7 +79,7 @@ main {
 }
 
 main h1 {
-  font-family: "open sans", sans-serif;
+  font-family: "cascadia code", monospace;
   font-size: 0.8rem;
   margin-bottom: 10px;
   letter-spacing: 1px;
@@ -113,7 +113,7 @@ main h1 {
 }
 
 #did-you-know {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(55, 88, 57, 0.092);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   padding: 10px;
@@ -129,9 +129,9 @@ main h1 {
 #did-you-know h3 {
   margin-bottom: 15px;
   color: olivedrab;
-  font-family: "open sans", sans-serif;
+  font-family: "corbel", sans-serif;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-align: center;
   text-shadow: 10px;
 }
@@ -143,14 +143,16 @@ main h1 {
   font-family: "open sans", sans-serif;
   color: white;
   letter-spacing: 0.5px;
+  font-weight: 10;
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
   opacity: 99%;
   color: olivedrab;
   text-align: center;
-  padding: 15px 15px;
   font-size: 0.8rem;
   letter-spacing: 0.6px;
   font-family: "open sans", sans-serif;
@@ -212,10 +214,11 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   padding: 8px 12px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   font-family: "open sans", sans-serif;
   font-size: 16px;
+  color: white;
 }
 
 .day-name {
@@ -225,8 +228,17 @@ footer a:hover {
 .day-temp {
   font-weight: 500;
 }
+
 #time {
   font-weight: 600;
   font-size: 1.05rem;
   margin-top: 0.1rem;
+}
+#emoji {
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
